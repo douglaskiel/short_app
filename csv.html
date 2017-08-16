@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+
+	<title>Import csv</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+
+</head>
+<body>
+	<div class="row">
+		<div class="col-md-4 col-md-8">
+			<ng-csv-import 
+      class="import"
+      content="csv.content"
+      header="csv.header" 
+      header-visible="csv.headerVisible" 
+      separator="csv.separator"
+      separator-visible="csv.separatorVisible"
+      result="csv.result"
+      encoding="csv.encoding"
+      encoding-visible="csv.encodingVisible"
+      upload-button-label="csv.uploadButtonLabel"
+      progress-callback="csv.progressCallback"
+      streaming-callback="csv.streamingCallback"
+      streaming-error-callback="csv.streamingCallback"></ng-csv-import>
+		</div>
+	</div>
+
+	<script src="bower_components/angular-csv-import/dist/angular-csv-import.js"></script>
+</body>
+</html>

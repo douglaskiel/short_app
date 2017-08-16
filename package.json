@@ -1,0 +1,11 @@
+{
+  "name": "short_app",
+  "version": "1.0.0",
+  "description": "csvimport",
+  "main": "csv.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Douglas Kiel",
+  "license": "ISC"
+}
